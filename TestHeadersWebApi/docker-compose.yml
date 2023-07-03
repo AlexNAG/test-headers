@@ -1,0 +1,11 @@
+﻿version: "3.8"
+
+services:
+  air-user-service:
+    container_name: "test-headers"
+    image: "test-headers"
+    build:
+      context: ../
+      dockerfile: ./TestHeadersWebApi/Dockerfile
+    ports:
+      - "5050:80"
